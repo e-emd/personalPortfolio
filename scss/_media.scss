@@ -1,0 +1,107 @@
+@media screen and (max-width: 991px) {
+    .grid { 
+        font-size: 2.5vw;
+        line-height: 3.2vw;
+    }
+
+    .header-link {
+        color: #c2c2c2;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .red-header {
+        font-size: 14px;
+        color: #f82623;
+    }
+
+    .red-header {
+        font-weight: 500;
+    }
+
+    .section {
+        width: 60vw;
+        height: 90vh;
+    }
+
+    .title {
+        font-size: 15vw;
+        line-height: 15.5vw;
+        letter-spacing: -6px;
+    }
+
+    .side-section {
+        position: static;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .w-background-video {
+        position: relative;
+        overflow: hidden;
+        color: white;
+    }
+
+    .paragraph {
+        font-size: 2.8vw;
+        line-height: 3.8vw;
+    }
+
+    .sign {
+        font-size: 1.4vw;
+        font-weight: 500;
+    }
+
+    .foot-link {
+        font-size: 1.7vw;
+    }
+
+};
+
+@media screen and (max-width: 767px) {
+    .about {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .paragraph {
+        font-size: 4vw;
+        line-height: 4.85vw;
+    }
+
+    #projects h2 {
+        font-size: 3vw;
+    }
+
+    #projects p {
+        font-size: 2.5vw;
+    }
+
+
+
+}
+
+@media screen and (max-width: 479px) {
+    .grid {
+        font-size: 2.5vw;
+        line-height: 3.2vw;
+    }
+}
+
