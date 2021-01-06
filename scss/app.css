@@ -1,0 +1,473 @@
+::-moz-selection {
+  color: black;
+  background: #ffffff;
+}
+
+::selection {
+  color: black;
+  background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+.body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: 'termina',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #dfe0df;
+}
+
+body {
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 100vh;
+}
+
+div {
+  display: block;
+}
+
+.header {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  margin-top: 5vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.header-link {
+  color: #c2c2c2;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.red-header {
+  color: #f82623;
+}
+
+.grid {
+  width: 60vw;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+h1 {
+  display: block;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.title {
+  font-size: 8vw;
+  line-height: 9.5vw;
+  font-weight: 400;
+  letter-spacing: -11px;
+}
+
+.noise-background {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 2, 2, 0.1);
+}
+
+.fa-arrow-down {
+  position: absolute;
+  bottom: 5vw;
+}
+
+.noise-background::before {
+  content: "";
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/black-grain.jpg");
+  -webkit-animation: .2s infinite noise;
+          animation: .2s infinite noise;
+  pointer-events: none;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 41vw;
+  height: 100vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.side-section {
+  position: fixed;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 30vw;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.w-background-video > video {
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -100;
+}
+
+.about hr {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  margin-bottom: 3vw;
+  font-size: 1.50vw;
+  line-height: 2.8vw;
+  text-align: left;
+}
+
+.paragraph a {
+  text-decoration: none;
+  color: #c2c2c2;
+}
+
+.paragraph span {
+  color: #f82623;
+}
+
+#projects hr {
+  margin-bottom: 3vw;
+}
+
+#projects h2 {
+  margin-bottom: 2vw;
+  font-size: 1.75vw;
+  line-height: 2.8vw;
+  text-align: left;
+  color: #f82623;
+}
+
+#projects a {
+  text-decoration: underline;
+  color: #c2c2c2;
+}
+
+#projects .project-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.footer {
+  z-index: 2;
+  width: 60vw;
+  padding-bottom: 5vw;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer .foot-link {
+  color: #f82623;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer a:hover {
+  cursor: pointer;
+}
+
+hr {
+  color: #f82623;
+}
+
+@-webkit-keyframes noise {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position: -5% 10%;
+  }
+  20% {
+    background-position: 15% 5%;
+  }
+  30% {
+    background-position: 7% -25%;
+  }
+  40% {
+    background-position: 20% 25%;
+  }
+  50% {
+    background-position: -25% 10%;
+  }
+  60% {
+    background-position: 15% 5%;
+  }
+  70% {
+    background-position: 0% 15%;
+  }
+  80% {
+    background-position: 25% 35%;
+  }
+  90% {
+    background-position: -10% 10%;
+  }
+}
+
+@keyframes noise {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position: -5% 10%;
+  }
+  20% {
+    background-position: 15% 5%;
+  }
+  30% {
+    background-position: 7% -25%;
+  }
+  40% {
+    background-position: 20% 25%;
+  }
+  50% {
+    background-position: -25% 10%;
+  }
+  60% {
+    background-position: 15% 5%;
+  }
+  70% {
+    background-position: 0% 15%;
+  }
+  80% {
+    background-position: 25% 35%;
+  }
+  90% {
+    background-position: -10% 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .grid {
+    font-size: 2.5vw;
+    line-height: 3.2vw;
+  }
+  .header-link {
+    color: #c2c2c2;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .red-header {
+    font-size: 14px;
+    color: #f82623;
+  }
+  .red-header {
+    font-weight: 500;
+  }
+  .section {
+    width: 60vw;
+    height: 90vh;
+  }
+  .title {
+    font-size: 15vw;
+    line-height: 15.5vw;
+    letter-spacing: -6px;
+  }
+  .side-section {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .w-background-video {
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  .paragraph {
+    font-size: 2.8vw;
+    line-height: 3.8vw;
+  }
+  .sign {
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+  .foot-link {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .paragraph {
+    font-size: 4vw;
+    line-height: 4.85vw;
+  }
+  #projects h2 {
+    font-size: 3vw;
+  }
+  #projects p {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .grid {
+    font-size: 2.6vw;
+    line-height: 4.5vw;
+    line-break: strict;
+  }
+  #about-me h1 {
+    margin-top: 1px;
+  }
+  #about-me p {
+    margin-bottom: 50px;
+  }
+  #about-me hr {
+    padding: 4px;
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+  .project p {
+    margin-bottom: 10px;
+  }
+  .project hr {
+    padding: 4px;
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+  .project h2 {
+    padding: 1.5rem 40px;
+    width: 300px;
+  }
+  .project .project-description {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .footer .sing {
+    font-size: 10px;
+  }
+  .footer a {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
